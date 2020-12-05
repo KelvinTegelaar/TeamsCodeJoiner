@@ -2,7 +2,7 @@
   "bindings": [
     {
       "authLevel": "anonymous",
-      "route": "{/join}",
+      "route": "{default:maxlength(0)?}",
       "type": "httpTrigger",
       "direction": "in",
       "name": "Request",

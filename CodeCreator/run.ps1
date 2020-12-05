@@ -8,7 +8,7 @@ if ($Request.method -eq "POST") {
     $TeamsURL = [System.Web.HttpUtility]::ParseQueryString($Request.Body)
     try {
         New-item $randomID -Value $TeamsURL['TeamsURL']
-        $Message = "Your Teams Quick Join code is $randomID."
+        $Message = "Your Teams Quick Join code is $randomID"
     }
     catch {
         $Message = "Could not create Teams Code, Please try again."
